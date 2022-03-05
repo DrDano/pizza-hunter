@@ -1,5 +1,5 @@
 {
-  "name": "18-nosql",
+  "name": "pizza-hunter",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -9,8 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^6.2.4"
   }
 }
