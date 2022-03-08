@@ -9,9 +9,13 @@ const ReplySchema = new Schema(
     },
     replyBody: {
       type: String,
+      required: "Can't have a reply without a reply!",
+      trim: true
     },
     writtenBy: {
       type: String,
+      required: "You can be anonymous here, but you still need to give us a name!",
+      trim: true
     },
     createdAt: {
       type: Date,
@@ -30,9 +34,13 @@ const CommentSchema = new Schema(
   {
     writtenBy: {
       type: String,
+      required: "You can be anonymous here, but you still need to give us a name!",
+      trim: true
     },
     commentBody: {
       type: String,
+      required: "Can't have a reply without a reply!",
+      trim: true
     },
     createdAt: {
       type: Date,
